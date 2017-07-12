@@ -18,4 +18,12 @@ public class Preference {
 		this.registrationDate = registrationDate;
 	}
 
+	
+	public String toString(){
+		return student + " - " + module + " " + preferedPeriod + " " + choice + " " + registrationDate;
+	}
+	
+	public Student getStudent(){
+		return this.student;
+	}
 }

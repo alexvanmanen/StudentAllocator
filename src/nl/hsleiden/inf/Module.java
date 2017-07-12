@@ -8,5 +8,13 @@ public class Module {
 		this.abbreviation = abbreviation;
 		this.studyYears = studyYears;
 	}
+	
+	public String getAbbreviation(){
+		return abbreviation;
+	}
+	
+	public String toString(){
+		return abbreviation +" " + studyYears;
+	}
 
 }

@@ -1,7 +1,4 @@
-package test;
-
-import nl.hsleiden.inf.Module;
-import nl.hsleiden.inf.Period;
+package nl.hsleiden.inf;
 
 public class Lectures {
 
@@ -16,4 +13,8 @@ public class Lectures {
 		this.period = period;
 	}
 
+	
+	public Module getModule(){
+		return module;
+	}
 }
