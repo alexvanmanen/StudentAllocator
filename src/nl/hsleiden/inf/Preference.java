@@ -26,4 +26,13 @@ public class Preference {
 	public Student getStudent(){
 		return this.student;
 	}
+	
+	public Module getModule(){
+		return this.module;
+	}
+	
+	public Period getPreferedPeriod(){
+		return preferedPeriod;
+	}
 }
+

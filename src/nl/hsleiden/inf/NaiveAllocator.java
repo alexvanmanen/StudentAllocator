@@ -9,10 +9,17 @@ public class NaiveAllocator implements Allocator {
 		Groups groups = new Groups();
 		for(Lectures lectures: lecturesList){
 			Group group = new Group(lectures);
-			group.addStudent(preferences.get(0).getStudent());
 			groups.add(group);
 			
 		}
+		
+		for(Preference preference: preferences){
+			if(!groups.isStudentAllocated(preference.getStudent(), preference.getPreferedPeriod())){
+				groups.getGroup(preference.getModule()).addStudent(preference.getStudent());
+			}
+			
+		}
+		
 		
 		
 		

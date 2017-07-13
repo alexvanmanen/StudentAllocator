@@ -17,4 +17,8 @@ public class Lectures {
 	public Module getModule(){
 		return module;
 	}
+	
+	public Period getPeriod(){
+		return period;
+	}
 }
